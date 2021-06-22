@@ -9,40 +9,41 @@
   <link rel="stylesheet" href="menu.css">
 </head>
 <body>
-  <div class="main">
-    <header>
+ <div class="wrap">
+    <div class="main">
+      <header>
         <div class="logo">
           <a href="#">Flower Cafe</a>
         </div>
         <div class="sp-menu">
           <span class="material-icons" id="open">menu</span>
         </div>
+        
+        <div class="pc-menu">
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="menu.html">Menu</a></li>
+              <li><a href="access.html">Access</a></li>
+              <li><a href="recruit.html">Recruit</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
       
-      <div class="pc-menu">
+      
+      <div class="mainvisual">
+        <h2 class="mainvisual-title">
+          Menu
+          <p class="mainvisual-subtitle">メニュー</p>
+        </h2>
+      </div>
+    
+      <div class="overlay">
+        <span class="material-icons" id="close">close</span>
         <nav>
           <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="access.html">Access</a></li>
-            <li><a href="recruit.html">Recruit</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-
-
-    <div class="mainvisual">
-      <h2 class="mainvisual-title">
-        Menu
-        <p class="mainvisual-subtitle">メニュー</p>
-      </h2>
-    </div>
-    
-    <div class="overlay">
-      <span class="material-icons" id="close">close</span>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
           <li><a href="menu.html">Menu</a></li>
           <li><a href="access.html">Access</a></li>
           <li><a href="recruit.html">Recruit</a></li>
@@ -51,7 +52,7 @@
     </div>
   </div>
   <!-- ここまでトップメニュー -->
-
+  
   <div class="menu">
     <div class="menu-img">
       <div class="imgs">
@@ -66,8 +67,8 @@
         <p class="price">￥500</p>
       </div>
     </div>
-      
-   <div class="menu-img">
+    
+    <div class="menu-img">
       <div class="imgs">
         <img src="img/menu-flower-coffee.jpg" alt="">
         <p class="name">フラワーコーヒー</p>
@@ -80,7 +81,7 @@
         <p class="price">￥1,000</p>
       </div>
     </div>
-      
+    
     <div class="menu-img">
       <div class="img-5">
         <img src="img/menu-flower.jpg" alt="">
@@ -89,7 +90,7 @@
       </div>
     </div>
   </div>
-
+  
   <footer class="footer">
     <nav class="footer-nav">
       <ul class="footer-list">
@@ -102,7 +103,7 @@
     <p class="footer-logo">©FlowerCafe</p>
   </footer>
   
-    <script src="js/main.js"></script>
-
+  <script src="js/main.js"></script>
+ </div>
 </body>
 </html>

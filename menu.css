@@ -1,7 +1,10 @@
 body {
   margin: 0;
   font-family: Verdana, sans-serif;
-  
+}
+
+.wrap {
+  overflow: hidden;
 }
 
 header {
@@ -222,7 +225,7 @@ header h1 {
 .footer-list {
   margin: 0 auto;
   list-style-type: none;
-  width: 374px;
+  width: 100%;
   height: 16px;
   margin: 0 auto;
   padding: 0;
