@@ -145,13 +145,19 @@ header h1 {
 }
 
 .mainvisual {
+  animation: fadeIn 5s ease 0s 1 normal;
+}
+@keyframes fadeIn { /*animation-nameで設定した値を書く*/
+  0% {opacity: 0} /*アニメーション開始時は不透明度0%*/
+  100% {opacity: 1} /*アニメーション終了時は不透明度100%*/
+}
+
+.mainvisual {
   align-items: center;
   justify-content: center;
   height: 360px;
   text-align: center; 
   line-height: 360px;
-  
-
 }
 
 .mainvisual-title {
@@ -293,16 +299,70 @@ header h1 {
   .pc-menu a {
     display: block;
     width: 80px;
-    line-height: 64px;
+    line-height: 80px;
     text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    padding-right: 20px;
+  }
+
+  .pc-menu li:nth-child(1) a {
+    color: #C32D4D;
   }
 
   .pc-menu a:hover {
-    background: #f2f2f2;
+    color: #C32D4D;
   }
 
   .sp-menu {
     display: none;
+  }
+
+  .logo a {
+    font-size: 40px;
+    line-height: 80px;
+    padding-left: 20px;
+  }
+  
+  
+
+  .main {
+    height: 680px;
+    margin: 0 auto;
+  }
+
+  .mainvisual {
+    line-height: 680px;
+  }
+
+  .mainvisual-title {
+    font-size: 88px;
+  }
+
+  .mainvisual-title p {
+    font-size: 18px;
+  }
+
+  .main-content {
+    display: flex;
+    padding: 70px 30px;
+  }
+
+  .main-example h3 {
+    padding-top: 0;
+    margin: 0;
+  }
+
+  .concept {
+    padding: 0;
+    margin-left: 60px;
+    height: 100%;
+    width: 90%;
+  }
+
+  .flot {
+    width: 50%;
   }
 
 }

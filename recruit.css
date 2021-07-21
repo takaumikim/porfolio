@@ -148,6 +148,15 @@ header h1 {
   line-height: 96px;
 }
 
+
+.mainvisual {
+  animation: fadeIn 5s ease 0s 1 normal;
+}
+@keyframes fadeIn { /*animation-nameで設定した値を書く*/
+  0% {opacity: 0} /*アニメーション開始時は不透明度0%*/
+  100% {opacity: 1} /*アニメーション終了時は不透明度100%*/
+}
+
 .mainvisual {
   align-items: center;
   justify-content: center;
@@ -278,6 +287,8 @@ header h1 {
   .pc-menu {
     display: block;
     margin-left: auto;
+    position: fixed;
+    right: 0;
   }
 
   .pc-menu ul {
@@ -290,15 +301,78 @@ header h1 {
   .pc-menu a {
     display: block;
     width: 80px;
-    line-height: 64px;
+    line-height: 80px;
     text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    padding-right: 20px;
+  }
+
+  .pc-menu li:nth-child(4) a {
+    color: #C32D4D;
   }
 
   .pc-menu a:hover {
-    background: #f2f2f2;
+    color: #C32D4D;
   }
 
   .sp-menu {
     display: none;
   }
+
+  .logo a {
+    font-size: 40px;
+    line-height: 80px;
+    padding-left: 20px;
+  }
+  
+  
+
+  .main {
+    height: 680px;
+    margin: 0 auto;
+  }
+
+  .mainvisual-title {
+    font-size: 48px;
+    margin: 0 auto;
+    margin-top: 66.5px;
+  }
+
+  .mainvisual-title p {
+    font-size: 14px;
+  }
+
+  .main {
+    height: 200px;
+  }
+
+  .recruit h2 {
+    font-weight: 900;
+    font-size: 24px;
+    margin-top: 50px;
+  }
+
+  .detail {
+    display: flex;
+    padding: 30px 50px;
+  }
+
+  .detail ul {
+    clear: both;
+
+  }
+
+  .detail h3 {
+    margin-left: 30px;
+    width: 100px;
+  }
+
+  .detail p {
+    /* margin-left: 30px; */
+    padding-left: 30px;
+  }
+  
+
 }
